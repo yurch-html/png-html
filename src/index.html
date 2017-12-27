@@ -12,11 +12,20 @@
 <body>
 
   <section class="squares-sect">
-    <div class="squares-sect__leng-btn">
-      
+    <div class="squares-sect__leag-btn">
+      <div class="lang-list">
+        <button class="lang-list__btn  active" type="button">
+          <!--           class .active-->
+          en
+        </button>
+        
+        <button class="lang-list__btn" type="button">
+          ru
+        </button>
+      </div>
     </div>
 
-    <div class="squares-sect__leng-btn">
+    <div class="squares-sect__main-panel">
       <div class="main-control">
         <div class="main-control__search-btn">
           <button class="search-btn" type="button">
@@ -28,15 +37,126 @@
 
         <div class="main-control__nav">
           <nav class="nav-page">
-            <button class="nav-page__open-menu" type="button">
-              <svg class="inline-svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-in"></use>
-            </svg>
+<!--           class .active-->
+            <button class="open-menu" type="button">
+              <span></span>
             </button>
           </nav>
         </div>
       </div>
     </div>   
+    
+    <div class="squares-sect__search-sect">
+      <div class="search-sect">
+        <div class="bott-panel">
+          <div class="bott-panel__logo">
+            <div class="logo">
+              <a class="logo__link" href="#">
+                <img class="logo__pic" src="img/logo.svg" alt="Squares">
+              </a>
+            </div>
+          </div>
+          
+          <div class="bott-panel__contact">
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <div class="contact-item">
+                  <span class="contact-item__title">
+                    Email us:
+                  </span>
+                  
+                  <a href="mailto:info@yourwebsite.com" class="contact-item__text">
+                    info@yourwebsite.com
+                  </a>
+                </div>
+              </li>
+              
+              <li class="contact-list__item">
+                <div class="contact-item">
+                  <span class="contact-item__title">
+                    Call us:
+                  </span>
+
+                  <a href="tel:18005551234" class="contact-item__text">
+                    1-800-555-1234
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bott-panel__social">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-item" href="#" >
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              
+              <li class="social-list__item">
+                <a class="social-item" href="#" >
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tw"></use>
+                  </svg>
+                </a>
+              </li>
+              
+              <li class="social-list__item">
+                <a class="social-item" href="#" >
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lin"></use>
+                  </svg>
+                </a>
+              </li>
+              
+              <li class="social-list__item">
+                <a class="social-item" href="#" >
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google"></use>
+                  </svg>
+                </a>
+              </li>
+              
+              <li class="social-list__item">
+                <a class="social-item" href="#" >
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wifi"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="search-sect__form">
+          <form class="search-form">
+            <div class="search-form__column">
+              <div class="search-form__ico-sect">
+                <i class="search-form__ico">
+                  <svg class="inline-svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-in"></use>
+                  </svg>
+                </i>
+                
+                <div class="search-form__ico-text">
+                  Find Your Home
+                </div>
+              </div>
+            </div>
+            
+            <div class="search-form__content">
+              
+            </div>
+            
+            <div class="search-form__column">
+              <button class="close" type="button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div hidden>

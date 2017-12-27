@@ -1,0 +1,261 @@
+.squares-sect {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+  overflow: hidden;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform $long-anim;
+  }
+  
+  &.active {
+    &:before {
+      transform: scale(.95);
+    }
+    
+    .main-control {
+      padding: 0 50px;
+    }
+  }
+}
+
+.squares-sect__leag-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lang-list {
+  display: flex;
+}
+
+.lang-list__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7em;
+  height: 2.7em;
+  background-color: #909eb0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: $black;
+  transition: background-color $anim, opacity $anim;
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  &.active {
+    background-color: #dbdfe6;
+    
+    @media screen and (min-width: $first-media) {
+      &:hover, &:focus {
+        background-color: darken(#dbdfe6, 10%);
+      }
+    }
+  }
+  
+  @media screen and (min-width: $first-media) {
+    &:hover, &:focus {
+      background-color: darken(#909eb0, 10%);
+    }
+  }
+}
+
+.squares-sect__main-panel {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin-top: auto;
+//  background: pink;
+}
+
+.main-control {
+  display: flex;
+  justify-content: space-between;
+  transition: padding $long-anim;
+}
+
+.search-btn,
+.open-menu {
+  padding: 1.8em;
+  width: 7em;
+  height: 7em;
+  background-color: $brand-rgba;
+  font-size: 1rem;
+  color: $white;
+  transition: background-color $anim, opacity $anim;
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  @media screen and (min-width: $first-media) {
+    &:hover, &:focus {
+      background-color: darken($brand-rgba, 10%);
+    }
+  }  
+}
+
+//.bott-panel
+.bott-panel {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 14;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5em 1.2em;
+  background-color: $black-rgba;
+  font-size: 1rem;
+  color: $white;
+}
+
+.bott-panel__logo,
+.bott-panel__social {
+  flex: 1;
+}
+
+.bott-panel__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 9.1em;
+  height: 3em;
+  transition: opacity $anim;
+  
+  &:active {
+    opacity: .7;
+  }
+}
+
+.logo__pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 1.7em;
+}
+
+.social-item {
+  display: block;
+  width: 2em;
+  height: 2em;
+  padding: .25em;
+  border: 1px solid transparent;
+  transition: opacity $anim, border $anim;
+
+  &:active {
+    opacity: .7;
+  }
+  
+  @media screen and (min-width: $first-media) {
+    &:hover,
+    &:focus {
+      border: 1px solid;
+    }
+  }
+}
+
+.contact-list {
+  display: flex;
+  font-size: 1.13em;
+}
+
+.contact-item__text {
+  transition: opacity $anim;
+
+  &:active {
+    opacity: .7;
+  }
+}
+
+.contact-list__item:not(:last-child) {
+  margin-right: 3em;
+}
+
+//.search-form
+.search-sect {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform $long-anim;
+  will-change: transform;
+}
+
+.squares-sect__search-sect {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 14;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://blog.allo.ua/wp-content/uploads/Istoriya-uspeha-Google-ili-Kak-iz-garazhnogo-biznesa-sozdat-mirovogo-IT-giganta.-Google-Karty.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.7);
+    transition: transform $long-anim, opacity $long-anim, visibility $long-anim;
+  }
+  
+  &.active {
+    &:before {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+    }
+    
+    .search-sect {
+      transform: translate(0);
+    }
+  }
+}
+
+.search-form {
+  position: relative;
+  z-index: 14;
+  display: flex;
+  background-color: $brand-rgba;
+}
+
+
+
+
+
+
+
+
