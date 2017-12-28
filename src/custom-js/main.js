@@ -24,6 +24,14 @@ $(document).ready(function(){
   $('.js-open-social').click(function() {
     $('.social-list').toggleClass('active');
   });
+
+  // slider
+  $(".js-carousel-1").slick({
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    dots: false
+  });
 });
 
 
