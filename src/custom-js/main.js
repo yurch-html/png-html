@@ -10,9 +10,19 @@ $(document).ready(function(){
   });
   
 //  search
-  $('.search-btn').click(function() {
-    $('.squares-sect').toggleClass('active');
-    $('.squares-sect__search-sect').toggleClass('active');
+  var botPanel = $('.bott-panel').outerHeight();
+  
+  $('.js-open-search').click(function() {
+    $('.squares-sect').addClass('open-search');
+  });
+  
+  $('.js-close-search').click(function() {
+    $('.squares-sect').removeClass('open-search');
+  });
+  
+//  js-open-social
+  $('.js-open-social').click(function() {
+    $('.social-list').toggleClass('active');
   });
 });
 
