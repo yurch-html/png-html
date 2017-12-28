@@ -6,7 +6,7 @@ $(document).ready(function(){
   
   //  menu
   $('.open-menu').click(function() {
-    $('.nav-page').toggleClass('active');
+    $('.main-control').toggleClass('active');
   });
   
 //  search
