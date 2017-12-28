@@ -538,7 +538,8 @@ body {
   .squares-sect.open-search .squares-sect__search-sect .search-sect {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
-            transform: translate(0); }
+            transform: translate(0);
+    overflow: auto; }
 
 .squares-sect__leag-btn {
   position: relative;
@@ -749,7 +750,9 @@ body {
   z-index: 15;
   width: 100%;
   max-height: 100vh;
-  overflow: auto;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transform: translateY(calc(100% - 64px));
       -ms-transform: translateY(calc(100% - 64px));
           transform: translateY(calc(100% - 64px));

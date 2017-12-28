@@ -37,6 +37,7 @@
 
       .search-sect {
         transform: translate(0);
+        overflow: auto;
       }
     }
   }
@@ -249,7 +250,7 @@
   z-index: 15;
   width: 100%;
   max-height: 100vh;
-  overflow: auto;
+  transform: translateY(100%);
   transform: translateY(calc(100% - 64px));
   transition: transform $long-anim;
   will-change: transform;
